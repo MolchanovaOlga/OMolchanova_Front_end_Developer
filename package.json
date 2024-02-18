@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Olga_Molchanova_Fullstack_Developer/",
+    "build": "vite build --base=/OMolchanova_Fullstack_Developer/",
     "preview": "vite preview"
   },
   "devDependencies": {
