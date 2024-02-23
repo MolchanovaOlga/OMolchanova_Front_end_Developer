@@ -14,23 +14,21 @@
 @import url('./about-me.css');
 @import url('./footer.css');
 
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shojumaru&display=swap');
 
 :root {
-  --main-white: #F8F8F8;
-  --main-green: #81AB3C;
-  --main-black: #1A1A1A;
+  --main-white: #f8f8f8;
+  --main-green: #81ab3c;
+  --main-black: #1a1a1a;
   --hover-gray: #9e9d9d;
-  --selected-grey: #888888; 
+  --selected-grey: #888888;
   --lines-grey-color: rgba(136, 136, 136, 0.7);
-  --yellow-color: #FAC036;
+  --yellow-color: #fac036;
 
   font-family: Montserrat, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-
 
   color: var(--main-white);
   background-color: var(--main-black);

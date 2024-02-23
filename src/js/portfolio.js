@@ -7,20 +7,42 @@ const individualProjectBtn = document.querySelector(
 );
 const projectList = document.querySelector('.portfolio-projects-list');
 
-//teamProjectBtn.addEventListener('click', loadTeamProjects);
-//individualProjectBtn.addEventListener('click', loadIndividualProjects);
+// -------------------------------   after load portfolio page   -------------------------------
+
+if (teamProjectBtn.parentNode.classList.contains('selected-radio-label')) {
+  drawProjectsList(teamProject);
+  individualProjectBtn.disabled = false;
+  teamProjectBtn.disabled = true;
+}
+
+if (individualProjectBtn.classList.contains('selected-radio-label')) {
+  drawProjectsList(individualProject);
+  teamProjectBtn.disabled = false;
+  individualProjectBtn.disabled = true;
+}
+
+teamProjectBtn.addEventListener('click', loadTeamProjects);
+individualProjectBtn.addEventListener('click', loadIndividualProjects);
+
+// -------------------------------   functions for clicking of radio buttons   -------------------------------
 
 function loadTeamProjects() {
   toggleRadioBtns();
   projectList.innerHTML = '';
   drawProjectsList(teamProject);
+  individualProjectBtn.disabled = false;
+  teamProjectBtn.disabled = true;
 }
 
 function loadIndividualProjects() {
   toggleRadioBtns();
   projectList.innerHTML = '';
   drawProjectsList(individualProject);
+  teamProjectBtn.disabled = false;
+  individualProjectBtn.disabled = true;
 }
+
+// -------------------------------  functions for drawing list of progects content   -------------------------------
 
 function drawProjectsList(arr) {
   const projectsItem = arr
@@ -76,9 +98,11 @@ function drawProjectsList(arr) {
       </div>
     </div>
     <div class="portfolio-projects-right-block">
-    <h3>${name}</h3>
-    <p>${technologies}</p>
-    <p>${descriptionUA}</p>
+    <h3 class="portfolio-project-title">${name}</h3>
+    <p class="portfolio-project-technologies">${technologies}</p>
+    <div class="portfolio-project-description-container" id="scrollTry">
+      <p class="portfolio-project-description">${descriptionUA}</p>
+    </div>
     </div>
   </li>
     `;
@@ -87,7 +111,27 @@ function drawProjectsList(arr) {
     .join('');
 
   projectList.insertAdjacentHTML('beforeend', projectsItem);
+  arr.reverse();
+
+  addedScroll();
 }
+
+// -------------------------------   added text scroll   -------------------------------
+
+function addedScroll() {
+  const textContainer = document.querySelectorAll(
+    '.portfolio-project-description-container'
+  );
+
+  textContainer.forEach(item => {
+    const text = item.querySelector('.portfolio-project-description');
+    if (text.clientHeight > item.clientHeight) {
+      item.classList.add('scroll-on');
+    }
+  });
+}
+
+// -------------------------------   function for toggle styles of radio buttons   -------------------------------
 
 function toggleRadioBtns() {
   teamProjectBtn.parentNode.classList.toggle('selected-radio-label');

@@ -87,10 +87,25 @@
   }
 }
 
+.portfolio-radio-form-label:hover,
+.portfolio-radio-form-label:focus {
+  color: var(--main-green);
+}
+
+.portfolio-radio-form-label:hover input,
+.portfolio-radio-form-label:focus input {
+  border: 1px solid var(--main-green);
+}
+
 .selected-radio-label {
   color: var(--main-green);
   font-weight: 600;
   cursor: auto;
+}
+
+.selected-radio-label:hover,
+.selected-radio-label:focus {
+  color: var(--main-green);
 }
 
 input {
@@ -120,6 +135,11 @@ input {
   }
 }
 
+.selected-radio-label:hover input,
+.selected-radio-label:focus input {
+  border: 8px solid var(--main-green);
+}
+
 input:checked {
   border: 8px solid var(--main-green);
   cursor: auto;
@@ -129,10 +149,20 @@ input:checked {
   input:checked {
     border: 9px solid var(--main-green);
   }
+
+  .selected-radio-label:hover input,
+  .selected-radio-label:focus input {
+    border: 9px solid var(--main-green);
+  }
 }
 
 @media screen and (min-width: 1250px) {
   input:checked {
+    border: 10px solid var(--main-green);
+  }
+
+  .selected-radio-label:hover input,
+  .selected-radio-label:focus input {
     border: 10px solid var(--main-green);
   }
 }
@@ -325,4 +355,60 @@ input:checked {
     border: none;
     padding-top: 0;
   }
+}
+
+.portfolio-project-title {
+  color: var(--main-green);
+  font-weight: 700;
+}
+
+.portfolio-project-technologies {
+  font-style: italic;
+  margin: 18px 0;
+}
+
+.portfolio-project-description-container {
+  height: 95px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1250px) {
+  .portfolio-project-description-container {
+    min-height: 145px;
+  }
+}
+
+.portfolio-project-description {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-project-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* -------------------------  scroll  ------------------------- */
+
+.scroll-on {
+  overflow-y: scroll;
+}
+
+#scrollTry::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px trasparent;
+  border-radius: 12px;
+  background-color: rgba(57, 71, 61);
+}
+
+#scrollTry::-webkit-scrollbar {
+  width: 6px;
+  background-color: rgba(57, 71, 61);
+}
+
+#scrollTry::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  -webkit-box-shadow: inset 0 0 6px rgb(129, 171, 60, 0.1);
+  background: rgb(129, 171, 60, 0.3);
 }
