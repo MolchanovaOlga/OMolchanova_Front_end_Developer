@@ -8,21 +8,24 @@ const individualProjectBtn = document.querySelector(
 const projectList = document.querySelector('.portfolio-projects-list');
 
 // -------------------------------   after load portfolio page   -------------------------------
+try {
+  if (teamProjectBtn.parentNode.classList.contains('selected-radio-label')) {
+    drawProjectsList(teamProject);
+    individualProjectBtn.disabled = false;
+    teamProjectBtn.disabled = true;
+  }
 
-if (teamProjectBtn.parentNode.classList.contains('selected-radio-label')) {
-  drawProjectsList(teamProject);
-  individualProjectBtn.disabled = false;
-  teamProjectBtn.disabled = true;
+  if (individualProjectBtn.classList.contains('selected-radio-label')) {
+    drawProjectsList(individualProject);
+    teamProjectBtn.disabled = false;
+    individualProjectBtn.disabled = true;
+  }
+
+  teamProjectBtn.addEventListener('click', loadTeamProjects);
+  individualProjectBtn.addEventListener('click', loadIndividualProjects);
+} catch (error) {
+  console.log(error);
 }
-
-if (individualProjectBtn.classList.contains('selected-radio-label')) {
-  drawProjectsList(individualProject);
-  teamProjectBtn.disabled = false;
-  individualProjectBtn.disabled = true;
-}
-
-teamProjectBtn.addEventListener('click', loadTeamProjects);
-individualProjectBtn.addEventListener('click', loadIndividualProjects);
 
 // -------------------------------   functions for clicking of radio buttons   -------------------------------
 

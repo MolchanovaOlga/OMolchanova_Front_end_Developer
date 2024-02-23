@@ -90,11 +90,13 @@
 .portfolio-radio-form-label:hover,
 .portfolio-radio-form-label:focus {
   color: var(--main-green);
+  transition: color 250ms linear;
 }
 
 .portfolio-radio-form-label:hover input,
 .portfolio-radio-form-label:focus input {
   border: 1px solid var(--main-green);
+  transition: border 250ms linear;
 }
 
 .selected-radio-label {
