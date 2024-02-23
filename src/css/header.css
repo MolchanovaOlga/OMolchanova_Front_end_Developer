@@ -5,21 +5,21 @@
   max-width: 375px;
   min-width: 320px;
   margin: 0 auto;
-  padding: 24px 30px 0 30px;
+  padding: 24px 16px 0 16px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1249px) {
   .header {
-      min-width: 768px;
-      max-width: 1200px;
-      padding: 48px 50px 0 50px;
+    min-width: 768px;
+    max-width: 1200px;
+    padding: 48px 50px 0 50px;
   }
 }
 
 @media screen and (min-width: 1250px) {
   .header {
-      max-width: 1200px;
-      padding: 30px 50px 0 50px;
+    max-width: 1200px;
+    padding: 30px 50px 0 50px;
   }
 }
 
@@ -42,8 +42,8 @@
 
 @media screen and (min-width: 768px) {
   .logo-icon {
-  width: 90px;
-  height: 63px;
+    width: 90px;
+    height: 63px;
   }
 }
 
@@ -55,16 +55,16 @@
 
 @media screen and (min-width: 768px) and (max-width: 1249px) {
   .header-contacts {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 }
 
 @media screen and (min-width: 1250px) {
   .header-contacts {
-      display: flex;
-      gap: 48px;
+    display: flex;
+    gap: 48px;
   }
 }
 
@@ -74,19 +74,21 @@
 
 .header-phone:hover,
 .header-phone:focus {
+  color: var(--selected-grey);
   transform: scale(1.01);
   transition: transform 250ms linear;
+  transition: color 250ms linear;
 }
 
 .header-phone-icon {
-  fill: var(--hover-gray);
+  fill: var(--main-white);
   margin-right: 8px;
 }
 
-.header-phone-text:hover,
-.header-phone-text:focus {
-  color: var(--selected-grey);
-  transition: color 250ms linear;
+.header-phone:hover .header-phone-icon,
+.header-phone:focus .header-phone-icon {
+  fill: var(--selected-grey);
+  transition: fill 250ms linear;
 }
 
 .header-mail {
@@ -95,19 +97,21 @@
 
 .header-mail:hover,
 .header-mail:focus {
+  color: var(--selected-grey);
   transform: scale(1.01);
   transition: transform 250ms linear;
+  transition: color 250ms linear;
 }
 
 .header-mail-icon {
-  fill: var(--hover-gray);
+  fill: var(--main-white);
   margin-right: 8px;
 }
 
-.header-mail-text:hover,
-.header-mail-text:focus {
-  color: var(--selected-grey);
-  transition: color 250ms linear;
+.header-mail:hover .header-mail-icon,
+.header-mail:focus .header-mail-icon {
+  fill: var(--selected-grey);
+  transition: fill 250ms linear;
 }
 
 /*       --------------------------  select lenguages ------------------------------*/
@@ -135,4 +139,3 @@
   transform: scale(1.1);
   transition: transform 250ms linear;
 }
-  
