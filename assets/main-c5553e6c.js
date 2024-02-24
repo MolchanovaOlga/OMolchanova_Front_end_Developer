@@ -28,7 +28,7 @@
       <div class="projects-left-text-container">
         <a class="portfolio-projects-github-link" href="${h}" target="_blank">
           <svg class="portfolio-projects-github-icon" width="24" height="24">
-            <use href="./img/sprite.svg#icon-github"></use>
+            <use href="/OMolchanova_Fullstack_Developer/assets/sprite-0f33a940.svg#icon-github"></use>
           </svg>
         Переглянути код
         </a>
@@ -44,4 +44,4 @@
     </div>
   </li>
     `).join("");d.insertAdjacentHTML("beforeend",o),i.reverse(),k();const l=document.querySelectorAll("picture");console.log(l)}function k(){document.querySelectorAll(".portfolio-project-description-container").forEach(o=>{o.querySelector(".portfolio-project-description").clientHeight>o.clientHeight&&o.classList.add("scroll-on")})}function u(){s.parentNode.classList.toggle("selected-radio-label"),r.parentNode.classList.toggle("selected-radio-label")}const w="/OMolchanova_Fullstack_Developer/assets/Olga_Molchanova_FullStack_Developer-14284dd6.pdf";document.getElementById("link-pdf").href=w;
-//# sourceMappingURL=main-df8ec751.js.map
+//# sourceMappingURL=main-c5553e6c.js.map
