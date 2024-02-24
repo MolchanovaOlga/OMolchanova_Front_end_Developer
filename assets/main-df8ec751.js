@@ -7,18 +7,18 @@
           <source
           media="(max-width: 767px)"
           srcset="
-          /OMolchanova_Fullstack_Developer/assets${j}-8a4f488d.jpg 1x,
-          /OMolchanova_Fullstack_Developer/assets${b}-8a4f488d.jpg 2x
+          OMolchanova_Fullstack_Developer/assets${j}-8a4f488d.jpg 1x,
+          OMolchanova_Fullstack_Developer/assets${b}-8a4f488d.jpg 2x
           "
           />
           <source
             media="(min-width: 768px)"
             srcset="
-            /OMolchanova_Fullstack_Developer/assets${p}-8a4f488d.jpg 1x,
-            /OMolchanova_Fullstack_Developer/assets${v}-8a4f488d.jpg 2x
+            OMolchanova_Fullstack_Developer/assets${p}-8a4f488d.jpg 1x,
+            OMolchanova_Fullstack_Developer/assets${v}-8a4f488d.jpg 2x
             "
           />
-          <img class="portfolio-projects-image" src="/OMolchanova_Fullstack_Developer/assets${p}-8a4f488d.jpg" alt="${a} project" />
+          <img class="portfolio-projects-image" src="OMolchanova_Fullstack_Developer/assets${p}-8a4f488d.jpg" alt="${a} project" />
         </picture>
         <div class="image-blur">
         <p class="image-blur-text">Перейти на сайт</p>
@@ -44,4 +44,4 @@
     </div>
   </li>
     `).join("");d.insertAdjacentHTML("beforeend",o),i.reverse(),k();const l=document.querySelectorAll("picture");console.log(l)}function k(){document.querySelectorAll(".portfolio-project-description-container").forEach(o=>{o.querySelector(".portfolio-project-description").clientHeight>o.clientHeight&&o.classList.add("scroll-on")})}function u(){s.parentNode.classList.toggle("selected-radio-label"),r.parentNode.classList.toggle("selected-radio-label")}const w="/OMolchanova_Fullstack_Developer/assets/Olga_Molchanova_FullStack_Developer-14284dd6.pdf";document.getElementById("link-pdf").href=w;
-//# sourceMappingURL=main-0f88c637.js.map
+//# sourceMappingURL=main-df8ec751.js.map
