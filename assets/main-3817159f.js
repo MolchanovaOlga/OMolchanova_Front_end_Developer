@@ -44,4 +44,4 @@
     </div>
   </li>
     `).join("");d.insertAdjacentHTML("beforeend",o),i.reverse(),x()}function x(){document.querySelectorAll(".portfolio-project-description-container").forEach(o=>{o.querySelector(".portfolio-project-description").clientHeight>o.clientHeight&&o.classList.add("scroll-on")})}function m(){r.parentNode.classList.toggle("selected-radio-label"),l.parentNode.classList.toggle("selected-radio-label")}const k="/OMolchanova_Fullstack_Developer/assets/Olga_Molchanova_FullStack_Developer-14284dd6.pdf";document.getElementById("link-pdf").href=k;
-//# sourceMappingURL=main-f43c310c.js.map
+//# sourceMappingURL=main-3817159f.js.map
