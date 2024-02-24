@@ -93,7 +93,7 @@ function drawProjectsList(arr) {
       <div class="projects-left-text-container">
         <a class="portfolio-projects-github-link" href="${urlOfGithub}" target="_blank">
           <svg class="portfolio-projects-github-icon" width="24" height="24">
-            <use href="./img/sprite.svg#icon-github"></use>
+            <use href="/OMolchanova_Fullstack_Developer/assets/sprite-0f33a940.svg#icon-github"></use>
           </svg>
         Переглянути код
         </a>
