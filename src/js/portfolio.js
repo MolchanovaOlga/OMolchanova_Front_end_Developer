@@ -72,18 +72,18 @@ function drawProjectsList(arr) {
           <source
           media="(max-width: 767px)"
           srcset="
-          OMolchanova_Fullstack_Developer/assets${imageMobSmall}-8a4f488d.jpg 1x,
-          OMolchanova_Fullstack_Developer/assets${imageMobBig}-8a4f488d.jpg 2x
+          /OMolchanova_Fullstack_Developer/assets/${imageMobSmall}-3ce77bfc.jpg 1x,
+          /OMolchanova_Fullstack_Developer/assets/${imageMobBig}-3ce77bfc.jpg 2x
           "
           />
           <source
             media="(min-width: 768px)"
             srcset="
-            OMolchanova_Fullstack_Developer/assets${imageTablDeskSmall}-8a4f488d.jpg 1x,
-            OMolchanova_Fullstack_Developer/assets${imageTablDeskBig}-8a4f488d.jpg 2x
+            /OMolchanova_Fullstack_Developer/assets/${imageTablDeskSmall}-3ce77bfc.jpg 1x,
+            /OMolchanova_Fullstack_Developer/assets/${imageTablDeskBig}-3ce77bfc.jpg 2x
             "
           />
-          <img class="portfolio-projects-image" src="OMolchanova_Fullstack_Developer/assets${imageTablDeskSmall}-8a4f488d.jpg" alt="${name} project" />
+          <img class="portfolio-projects-image" src="/OMolchanova_Fullstack_Developer/assets/${imageTablDeskSmall}-3ce77bfc.jpg" alt="${name} project" />
         </picture>
         <div class="image-blur">
         <p class="image-blur-text">Перейти на сайт</p>
@@ -117,9 +117,6 @@ function drawProjectsList(arr) {
   arr.reverse();
 
   addedScroll();
-
-  const picture = document.querySelectorAll('picture');
-  console.log(picture);
 }
 
 // -------------------------------   added text scroll   -------------------------------
