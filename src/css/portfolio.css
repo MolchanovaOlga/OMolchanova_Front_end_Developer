@@ -217,6 +217,10 @@ input:checked {
   }
 }
 
+.portfolio-page-disabled-images {
+  display: none;
+}
+
 /*       --------------------------  left-block ------------------------------*/
 
 .portfolio-projects-left-block {
