@@ -20,8 +20,8 @@
 
 @media screen and (min-width: 1250px) {
   .hero-section {
-    padding-top: 40px;
-    padding-bottom: 80px;
+    padding-top: 72px;
+    padding-bottom: 72px;
     max-width: 1200px;
   }
 }
@@ -193,17 +193,24 @@
 .hero-photo-container {
   border-radius: 150px;
   overflow: hidden;
+  width: 185px;
+  height: 320px;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1249px) {
   .hero-photo-container {
     border-radius: 120px;
+    width: 210px;
+    height: 405px;
   }
 }
 
 @media screen and (min-width: 1250px) {
   .hero-photo-container {
     border-radius: 190px;
+    width: 280px;
+    height: 478px;
   }
 }
 
@@ -214,30 +221,57 @@
 }
 
 .hero-img {
-  width: 185px;
-  height: 320px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
+.first-page-image-blur {
+  position: absolute;
+  width: 185px;
+  height: 320px;
+  border-radius: 150px;
+  top: 0;
+  left: 0;
+  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1249px) {
-  .hero-img {
+  .first-page-image-blur {
+    border-radius: 120px;
     width: 210px;
     height: 405px;
   }
 }
 
 @media screen and (min-width: 1250px) {
-  .hero-img {
+  .first-page-image-blur {
+    border-radius: 190px;
     width: 280px;
     height: 478px;
   }
+}
+
+.first-page-image-blur:hover,
+.first-page-image-blur:focus {
+  backdrop-filter: blur(2.5px);
+  background: rgba(57, 71, 61, 0.5);
+  color: white;
+  transition: background 250ms linear;
+  transition: backdrop-filter 250ms linear;
+}
+
+.first-page-image-blur-text {
+  font-weight: 200;
 }
 
 /*       --------------------------  paragraf bottom ------------------------------*/
 
 .hide-text-bottom {
   display: inline;
-  text-align: center;
   overflow: hidden;
   margin: 48px auto 0 auto;
   width: 100%;
@@ -246,6 +280,10 @@
 @media screen and (min-width: 768px) and (max-width: 1249px) {
   .hide-text-bottom {
     margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
 
@@ -254,6 +292,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     margin-top: 50px;
   }
 }
@@ -270,13 +309,7 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   width: 700px;
-}
-
-@media screen and (min-width: 768px) {
-  .hero-paragraf-bottom {
-    font-size: 20px;
-    line-height: 1.2;
-  }
+  margin-left: 28px;
 }
 
 @keyframes noticeLine {
@@ -286,5 +319,13 @@
 
   to {
     transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-paragraf-bottom {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-left: 0;
   }
 }
