@@ -72,15 +72,15 @@ function drawProjectsList(arr) {
           <source
           media="(max-width: 767px)"
           srcset="
-          /OMolchanova_Fullstack_Developer/assets/${imageMobSmall}.jpg 1x,
-          /OMolchanova_Fullstack_Developer/assets/${imageMobBig}.jpg 2x
+          /OMolchanova_Front_end_Developer/assets/${imageMobSmall}.jpg 1x,
+          /OMolchanova_Front_end_Developer/assets/${imageMobBig}.jpg 2x
           "
           />
           <source
             media="(min-width: 768px)"
             srcset="
-            /OMolchanova_Fullstack_Developer/assets/${imageTablDeskSmall}.jpg 1x,
-            /OMolchanova_Fullstack_Developer/assets/${imageTablDeskBig}.jpg 2x
+            /OMolchanova_Front_end_Developer/assets/${imageTablDeskSmall}.jpg 1x,
+            /OMolchanova_Front_end_Developer/assets/${imageTablDeskBig}.jpg 2x
             "
           />
           <img class="portfolio-projects-image" src="/OMolchanova_Fullstack_Developer/assets/${imageTablDeskSmall}.jpg" alt="${name} project" />
@@ -93,7 +93,7 @@ function drawProjectsList(arr) {
       <div class="projects-left-text-container">
         <a class="portfolio-projects-github-link" href="${urlOfGithub}" target="_blank">
           <svg class="portfolio-projects-github-icon" width="24" height="24">
-            <use href="/OMolchanova_Fullstack_Developer/assets/sprite-0f33a940.svg#icon-github"></use>
+            <use href="/OMolchanova_Front_end_Developer/assets/sprite-0f33a940.svg#icon-github"></use>
           </svg>
         Переглянути код
         </a>
