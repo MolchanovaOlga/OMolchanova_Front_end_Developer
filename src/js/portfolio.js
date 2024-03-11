@@ -63,6 +63,7 @@ function drawProjectsList(arr) {
         imageTablDeskBig,
         imageTablDeskSmall,
       }) => {
+        console.log(imageTablDeskSmall);
         return `
     <li class="portfolio-projects-item">
     <div class="portfolio-projects-left-block">
@@ -72,7 +73,7 @@ function drawProjectsList(arr) {
           <source
           media="(max-width: 767px)"
           srcset="
-          /OMolchanova_Front_end_Developer/assets/${imageMobSmall}.jpg 1x,
+          ${imageMobSmall} 1x,
           /OMolchanova_Front_end_Developer/assets/${imageMobBig}.jpg 2x
           "
           />
@@ -83,7 +84,7 @@ function drawProjectsList(arr) {
             /OMolchanova_Front_end_Developer/assets/${imageTablDeskBig}.jpg 2x
             "
           />
-          <img class="portfolio-projects-image" src="/OMolchanova_Fullstack_Developer/assets/${imageTablDeskSmall}.jpg" alt="${name} project" />
+          <img class="portfolio-projects-image" src="${imageTablDeskSmall}" alt="${name} project" />
         </picture>
         <div class="image-blur">
         <p class="image-blur-text">Перейти на сайт</p>

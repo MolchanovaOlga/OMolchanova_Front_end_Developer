@@ -1,3 +1,6 @@
+import energyFlowMob1 from '../assets/img/team-projects/energy-flow-mob-1x.jpg';
+import energyFlowTablDesk1 from '../assets/img/team-projects/energy-flow-tabl-desk-1x.jpg';
+
 const teamProject = [
   {
     name: 'Focuse Frame',
@@ -28,9 +31,9 @@ const teamProject = [
     urlOfGithub:
       'https://github.com/MolchanovaOlga/dev-hunters-team-project-js',
     imageMobBig: 'energy-flow-mob-2x-15d621cf',
-    imageMobSmall: 'energy-flow-mob-1x-54b92ec9',
+    imageMobSmall: `${energyFlowMob1}`,
     imageTablDeskBig: 'energy-flow-tabl-desk-2x-5a896607',
-    imageTablDeskSmall: 'energy-flow-tabl-desk-1x-d6567727',
+    imageTablDeskSmall: `${energyFlowTablDesk1}`,
   },
 ];
 
