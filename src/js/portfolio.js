@@ -1,6 +1,6 @@
-import { teamProject, individualProject } from './data';
+import { individualProjects } from '../data/data-individual-projects';
+import { teamProjects } from '../data/data-team-projects';
 
-//const form = document.querySelector('.portfolio-radio-form');
 const teamProjectBtn = document.querySelector('input[value="team-projects"]');
 const individualProjectBtn = document.querySelector(
   'input[value="individual-projects"]'
@@ -10,13 +10,13 @@ const projectList = document.querySelector('.portfolio-projects-list');
 // -------------------------------   after load portfolio page   -------------------------------
 try {
   if (teamProjectBtn.parentNode.classList.contains('selected-radio-label')) {
-    drawProjectsList(teamProject);
+    drawProjectsList(teamProjects);
     individualProjectBtn.disabled = false;
     teamProjectBtn.disabled = true;
   }
 
   if (individualProjectBtn.classList.contains('selected-radio-label')) {
-    drawProjectsList(individualProject);
+    drawProjectsList(individualProjects);
     teamProjectBtn.disabled = false;
     individualProjectBtn.disabled = true;
   }
@@ -32,7 +32,7 @@ try {
 async function loadTeamProjects() {
   toggleRadioBtns();
   projectList.innerHTML = '';
-  drawProjectsList(teamProject);
+  drawProjectsList(teamProjects);
   individualProjectBtn.disabled = false;
   teamProjectBtn.disabled = true;
 }
@@ -40,7 +40,7 @@ async function loadTeamProjects() {
 async function loadIndividualProjects() {
   toggleRadioBtns();
   projectList.innerHTML = '';
-  drawProjectsList(individualProject);
+  drawProjectsList(individualProjects);
   teamProjectBtn.disabled = false;
   individualProjectBtn.disabled = true;
 }
@@ -49,7 +49,6 @@ async function loadIndividualProjects() {
 
 function drawProjectsList(arr) {
   const projectsItem = arr
-    .reverse()
     .map(
       ({
         name,
@@ -63,7 +62,6 @@ function drawProjectsList(arr) {
         imageTablDeskBig,
         imageTablDeskSmall,
       }) => {
-        console.log(imageTablDeskSmall);
         return `
     <li class="portfolio-projects-item">
     <div class="portfolio-projects-left-block">
@@ -115,7 +113,6 @@ function drawProjectsList(arr) {
     .join('');
 
   projectList.insertAdjacentHTML('beforeend', projectsItem);
-  arr.reverse();
 
   addedScroll();
 }
