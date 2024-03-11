@@ -1,5 +1,7 @@
 import energyFlowMob1 from '../assets/img/team-projects/energy-flow-mob-1x.jpg';
+import energyFlowMob2 from '../assets/img/team-projects/energy-flow-mob-2x.jpg';
 import energyFlowTablDesk1 from '../assets/img/team-projects/energy-flow-tabl-desk-1x.jpg';
+import energyFlowTablDesk2 from '../assets/img/team-projects/energy-flow-tabl-desk-2x.jpg';
 
 const teamProject = [
   {
@@ -30,9 +32,9 @@ const teamProject = [
     urlOfSite: 'https://karolinataran.github.io/project-dev-hunters/',
     urlOfGithub:
       'https://github.com/MolchanovaOlga/dev-hunters-team-project-js',
-    imageMobBig: 'energy-flow-mob-2x-15d621cf',
+    imageMobBig: `${energyFlowMob2}`,
     imageMobSmall: `${energyFlowMob1}`,
-    imageTablDeskBig: 'energy-flow-tabl-desk-2x-5a896607',
+    imageTablDeskBig: `${energyFlowTablDesk2}`,
     imageTablDeskSmall: `${energyFlowTablDesk1}`,
   },
 ];

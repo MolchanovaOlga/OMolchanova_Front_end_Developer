@@ -74,14 +74,14 @@ function drawProjectsList(arr) {
           media="(max-width: 767px)"
           srcset="
           ${imageMobSmall} 1x,
-          /OMolchanova_Front_end_Developer/assets/${imageMobBig}.jpg 2x
+          ${imageMobBig} 2x
           "
           />
           <source
             media="(min-width: 768px)"
             srcset="
-            /OMolchanova_Front_end_Developer/assets/${imageTablDeskSmall}.jpg 1x,
-            /OMolchanova_Front_end_Developer/assets/${imageTablDeskBig}.jpg 2x
+            ${imageTablDeskSmall} 1x,
+            ${imageTablDeskBig} 2x
             "
           />
           <img class="portfolio-projects-image" src="${imageTablDeskSmall}" alt="${name} project" />
