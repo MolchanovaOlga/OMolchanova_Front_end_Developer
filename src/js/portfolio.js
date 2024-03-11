@@ -65,7 +65,7 @@ function drawProjectsList(arr) {
         return `
     <li class="portfolio-projects-item">
     <div class="portfolio-projects-left-block">
-      <a class="portfolio-projects-site-link" href="${urlOfSite}" target="_blank">
+      <a class="portfolio-projects-site-link" href="${urlOfSite}" target="_blank" aria-label="Link to projects-site" noopener noreferrer>
       <div class="portfolio-projects-image-container">
         <picture>
           <source
@@ -90,7 +90,7 @@ function drawProjectsList(arr) {
         </div>
       </a>
       <div class="projects-left-text-container">
-        <a class="portfolio-projects-github-link" href="${urlOfGithub}" target="_blank">
+        <a class="portfolio-projects-github-link" href="${urlOfGithub}" target="_blank" aria-label="Link to projects github page" noopener noreferrer>
           <svg class="portfolio-projects-github-icon" width="24" height="24">
             <use href="/OMolchanova_Front_end_Developer/assets/sprite-0f33a940.svg#icon-github"></use>
           </svg>
