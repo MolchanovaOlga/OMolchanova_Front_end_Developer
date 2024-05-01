@@ -15,7 +15,7 @@ import energyFlowTablDesk2 from '../assets/img/team-projects/energy-flow-tabl-de
 const teamProjects = [
   {
     name: 'Energy Flow',
-    technologies: 'HTML, CSS, JS, Vite',
+    technologies: ' JS, HTML, CSS, localStorage, Vite',
     descriptionUA:
       'Веб-сайт розроблений для бажаючих мати гарну фізичну форму з адаптивним дизайном, мотивуючою цитатою дня, пошуком за ключовим словом, можливістю додати вправу до улюблених, модальними вікнами, формами та пагінацією.<br>Роль: розробник модального вікна вправи та частково модального вікна рейтингу.',
     descriptionEN:
