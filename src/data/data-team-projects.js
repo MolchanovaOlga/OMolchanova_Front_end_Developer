@@ -32,7 +32,7 @@ const teamProjects = [
     descriptionUA:
       'Веб-сайт розроблений для контролювання кількості випитої води за день з адаптивним дизайном, маршрутизацією, авторизацією (в т.ч. і Google авторизацією), можливістю додати порцію випитої води із вказанням кількості та часу, а також редагуванням, можливістю додавання аватарки користувача та даних для розрахунку рекомендованої денної норми споживання води користувачем, модальними вікнами, формами.<br>Роль: розробник модального вікна та його функціоналу для додавання та корегування випитої води.',
     descriptionEN:
-      'The website is designed to monitor the amount of water drunk per day with responsive design, routing, authorization (including Google authorization), the ability to add a portion of water drunk with the indication of the amount and time, as well as editing, the ability to add a user avatar and data to calculate the recommended daily rate of water consumption by the user, modal windows, forms.<br>Role: developer of the modal window and its functionality for add and edit the water consumed.',
+      'The website is created to monitor the amount of water drunk per day with responsive design, routing, authorization (including Google authorization), the ability to add a portion of water drunk with the indication of the amount and time, as well as editing, the ability to add a user avatar and data to calculate the recommended daily rate of water consumption by the user, modal windows, forms.<br>Role: developer of the modal window and its functionality for add and edit the water consumed.',
     projectEN: 'Team project',
     projectUA: 'Командний проєкт',
     urlOfSite: 'https://the-strategy-squad-frontend.vercel.app/',
