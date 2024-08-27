@@ -10,12 +10,43 @@ import energyFlowMob2 from '../assets/img/team-projects/energy-flow-mob-2x.jpg';
 import energyFlowTablDesk1 from '../assets/img/team-projects/energy-flow-tabl-desk-1x.jpg';
 import energyFlowTablDesk2 from '../assets/img/team-projects/energy-flow-tabl-desk-2x.jpg';
 
+import aquaTrackMob1 from '../assets/img/team-projects/aqua-track-mob-1x.jpg';
+import aquaTrackMob2 from '../assets/img/team-projects/aqua-track-mob-2x.jpg';
+import aquaTrackTablDesk1 from '../assets/img/team-projects/aqua-track-tabl-desk-1x.jpg';
+import aquaTrackTablDesk2 from '../assets/img/team-projects/aqua-track-tabl-desk-2x.jpg';
+
 // ---------------------------------------- Arrays of team projects data ----------------------------------------
 
 const teamProjects = [
   {
+    name: 'Aqua Track',
+    technologies: [
+      'React',
+      'Redux Toolkit',
+      'HTML',
+      'CSS',
+      'Vite',
+      'Vercel',
+      'JWT',
+    ],
+    descriptionUA:
+      'Веб-сайт розроблений для контролювання кількості випитої води за день з адаптивним дизайном, маршрутизацією, авторизацією (в т.ч. і Google авторизацією), можливістю додати порцію випитої води із вказанням кількості та часу, а також редагуванням, можливістю додавання аватарки користувача та даних для розрахунку рекомендованої денної норми споживання води користувачем, модальними вікнами, формами.<br>Роль: розробник модального вікна та його функціоналу для додавання та корегування випитої води.',
+    descriptionEN:
+      'The website is designed to monitor the amount of water drunk per day with responsive design, routing, authorization (including Google authorization), the ability to add a portion of water drunk with the indication of the amount and time, as well as editing, the ability to add a user avatar and data to calculate the recommended daily rate of water consumption by the user, modal windows, forms.<br>Role: developer of the modal window and its functionality for add and edit the water consumed.',
+    projectEN: 'Team project',
+    projectUA: 'Командний проєкт',
+    urlOfSite: 'https://the-strategy-squad-frontend.vercel.app/',
+    urlOfGithub:
+      'https://github.com/MolchanovaOlga/the-strategy-squad-frontend',
+    imageMobBig: `${aquaTrackMob2}`,
+    imageMobSmall: `${aquaTrackMob1}`,
+    imageTablDeskBig: `${aquaTrackTablDesk2}`,
+    imageTablDeskSmall: `${aquaTrackTablDesk1}`,
+  },
+
+  {
     name: 'Energy Flow',
-    technologies: ' JS, HTML, CSS, localStorage, Vite',
+    technologies: ['JS', 'HTML', 'CSS', 'localStorage', 'Vite'],
     descriptionUA:
       'Веб-сайт розроблений для бажаючих мати гарну фізичну форму з адаптивним дизайном, мотивуючою цитатою дня, пошуком за ключовим словом, можливістю додати вправу до улюблених, модальними вікнами, формами та пагінацією.<br>Роль: розробник модального вікна вправи та частково модального вікна рейтингу.',
     descriptionEN:
@@ -30,9 +61,10 @@ const teamProjects = [
     imageTablDeskBig: `${energyFlowTablDesk2}`,
     imageTablDeskSmall: `${energyFlowTablDesk1}`,
   },
+
   {
     name: 'Focuse Frame',
-    technologies: 'HTML, CSS, JS, Vite',
+    technologies: ['HTML', 'CSS', 'JS', 'Vite'],
     descriptionUA:
       'Веб-сайт розроблений для школи фотографії з адаптивним дизайном, бургер-меню, модальним вікном, формами та анімаціями.<br>Роль: розробник мобільного модального вікна.',
     descriptionEN:

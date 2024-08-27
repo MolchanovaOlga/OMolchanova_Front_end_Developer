@@ -101,7 +101,7 @@ function drawProjectsList(arr) {
     </div>
     <div class="portfolio-projects-right-block">
     <h3 class="portfolio-project-title">${name}</h3>
-    <p class="portfolio-project-technologies">${technologies}</p>
+    <p class="portfolio-project-technologies">${technologies.join(', ')}</p>
     <div class="portfolio-project-description-container" id="scrollTry">
       <p class="portfolio-project-description">${descriptionUA}</p>
     </div>

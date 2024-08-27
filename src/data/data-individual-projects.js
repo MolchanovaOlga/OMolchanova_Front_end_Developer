@@ -1,5 +1,10 @@
 // ---------------------------------------- Ways to individual projects images ----------------------------------------
 
+import learnLingoMob1 from '../assets/img/individual-projects/learn-lingo-mob-1x.jpg';
+import learnLingoMob2 from '../assets/img/individual-projects/learn-lingo-mob-2x.jpg';
+import learnLingoTablDesk1 from '../assets/img/individual-projects/learn-lingo-tabl-desk-1x.jpg';
+import learnLingoTablDesk2 from '../assets/img/individual-projects/learn-lingo-tabl-desk-2x.jpg';
+
 import phoneBookMob1 from '../assets/img/individual-projects/phonebook-mob-1x.jpg';
 import phoneBookMob2 from '../assets/img/individual-projects/phonebook-mob-2x.jpg';
 import phoneBookTablDesk1 from '../assets/img/individual-projects/phonebook-tabl-desk-1x.jpg';
@@ -29,12 +34,36 @@ import webStudioTablDesk2 from '../assets/img/individual-projects/web-studio-tab
 
 const individualProjects = [
   {
+    name: 'Learn Lingo',
+    technologies: [
+      'React',
+      'Redux Toolkit',
+      'Vite',
+      'Vercel',
+      'JWT',
+      'Local storage',
+    ],
+    descriptionUA:
+      'Застосунок для пошуку викладача іноземної мови з можливістю додавати викладачів в улюблені, з маршрутизацією, авторизацією, пагінацією, можливістю змінити тему сайту, формами та модальними вікнами. Застосунок складається з 3-х сторінок, одна з яких є приватною. Використано бібліотеки React Router, react-hook-form, Yup, Persist, next-themes Axios.',
+    descriptionEN:
+      'An application for finding a foreign language teacher with the ability to add teachers to favorites, with routing, authorization, forms and modal windows. The application consists of 3 pages, one of which is private. React Router, react-hook-form, Yup, Persist, Axios libraries were used.',
+    projectEN: 'Individual project',
+    projectUA: 'Індивідуальний проєкт',
+    urlOfSite: 'https://learn-lingo-gamma.vercel.app/',
+    urlOfGithub: 'https://github.com/MolchanovaOlga/learn-lingo',
+    imageMobBig: `${learnLingoMob2}`,
+    imageMobSmall: `${learnLingoMob1}`,
+    imageTablDeskBig: `${learnLingoTablDesk2}`,
+    imageTablDeskSmall: `${learnLingoTablDesk1}`,
+  },
+
+  {
     name: 'Phonebook',
-    technologies: 'React, Redux Toolkit, Vite, Vercel, JWT',
+    technologies: ['React', 'Redux Toolkit', 'Vite', 'Vercel', 'JWT'],
     descriptionUA:
       'Застосунок із маршрутизацією для зберігання контактів телефонної книги з реєстрацією, логінізацією та можливістю оновлення користувача за допомогою JWT. Застосунок складається з форми, списку контактів та поля пошуку для фільтрації списку контактів. Використано бібліотеки React Router, Formik, Yup, Persist, React Icons, React Hot Toast, react-loader-spinner, Axios.',
     descriptionEN:
-      'A routing application for storing phonebook contacts with registration, login and user updateability using JWT. The application consists of a form, a list of contacts and a search field for filtering the list of contacts. libraries such as React Router, Formik, Yup, Persist, React Icons, React Hot Toast, react-loader-spinner, Axios were used.',
+      'A routing application for storing phonebook contacts with registration, login and user updateability using JWT. The application consists of a form, a list of contacts and a search field for filtering the list of contacts. Libraries such as React Router, Formik, Yup, Persist, React Icons, React Hot Toast, react-loader-spinner, Axios were used.',
     projectEN: 'Individual project',
     projectUA: 'Індивідуальний проєкт',
     urlOfSite: 'https://goit-react-hw-08-ochre-three.vercel.app/',
@@ -44,9 +73,10 @@ const individualProjects = [
     imageTablDeskBig: `${phoneBookTablDesk2}`,
     imageTablDeskSmall: `${phoneBookTablDesk1}`,
   },
+
   {
     name: 'Image Search',
-    technologies: 'Type Script, React, Vite, Vercel',
+    technologies: ['Type Script', 'React', 'Vite', 'Vercel'],
     descriptionUA:
       'Застосунок пошуку зображень за ключовим словом. Використано пагінацію, бібліотеки React Modal, React Hot Toast, react-loader-spinner, Axios та АРІ сервіс зображень Unsplash.',
     descriptionEN:
@@ -60,9 +90,10 @@ const individualProjects = [
     imageTablDeskBig: `${imageSearchTablDesk2}`,
     imageTablDeskSmall: `${imageSearchTablDesk1}`,
   },
+
   {
     name: 'Movies',
-    technologies: 'React, React Router, Vite, Vercel',
+    technologies: ['React', 'React Router', 'Vite', 'Vercel'],
     descriptionUA:
       'Застосунок із маршрутизацією для пошуку фільмів за назвою та детальним описом фільму. Використано асинхронне завантаження JS-коду для маршрутів застосунку, використовуючи React.lazy та Suspense, бібліотеки React Router, React Hot Toast, react-loader-spinner, Axios та АРІ сервіс TMDB.',
     descriptionEN:
@@ -76,9 +107,10 @@ const individualProjects = [
     imageTablDeskBig: `${moviesTablDesk2}`,
     imageTablDeskSmall: `${moviesTablDesk1}`,
   },
+
   {
     name: 'Gallery',
-    technologies: ' JS, HTML, CSS, Vite',
+    technologies: ['JS', 'HTML', 'CSS', 'Vite'],
     descriptionUA:
       'Застосунок пошуку зображень за ключовим словом і їх перегляду в галереї з плавним прокручуванням сторінки.  Використано пагінацію, бібліотеки  Axios,  iziToast, css-loader, SimpleLightbox та АРІ сервіс Pixabay.',
     descriptionEN:
@@ -92,9 +124,10 @@ const individualProjects = [
     imageTablDeskBig: `${galleryTablDesk2}`,
     imageTablDeskSmall: `${galleryTablDesk1}`,
   },
+
   {
     name: 'WebStudio',
-    technologies: 'HTML, JS, SCSS, SASS',
+    technologies: ['HTML', 'JS', 'SCSS', 'SASS'],
     descriptionUA:
       'Cайт розроблений для компанії  “WebStudio”. Адаптивний дизайн, ефекти трансформації, модальні вікна.',
     descriptionEN:
