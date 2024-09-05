@@ -43,5 +43,5 @@
     </div>
     </div>
   </li>
-    `).join("");d.insertAdjacentHTML("beforeend",t),se()}function se(){document.querySelectorAll(".portfolio-project-description-container").forEach(t=>{t.querySelector(".portfolio-project-description").clientHeight>t.clientHeight&&t.classList.add("scroll-on")})}function b(){r.parentNode.classList.toggle("selected-radio-label"),n.parentNode.classList.toggle("selected-radio-label")}const ie="/OMolchanova_Front_end_Developer/assets/Olga_Molchanova_Front_end_Developer-b5126065.pdf";document.getElementById("link-pdf").href=ie;
-//# sourceMappingURL=main-a2745ed7.js.map
+    `).join("");d.insertAdjacentHTML("beforeend",t),se()}function se(){document.querySelectorAll(".portfolio-project-description-container").forEach(t=>{t.querySelector(".portfolio-project-description").clientHeight>t.clientHeight&&t.classList.add("scroll-on")})}function b(){r.parentNode.classList.toggle("selected-radio-label"),n.parentNode.classList.toggle("selected-radio-label")}const ie="/OMolchanova_Front_end_Developer/assets/Olga_Molchanova_Front_end_Developer-65f8edfd.pdf";document.getElementById("link-pdf").href=ie;
+//# sourceMappingURL=main-21194e69.js.map
